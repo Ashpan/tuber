@@ -31,11 +31,11 @@ public class Students extends AppCompatActivity {
                         Editable high = textHigh.getText();
                         Editable radius = searchRadius.getText();
 
-                        ParseObject tutorInfo = new ParseObject("studentInfo");
+                        /*ParseObject tutorInfo = new ParseObject("studentInfo");
                         studentInfo.put("name", low);
                         studentInfo.put("rate", high);
                         studentInfo.put("radius", radius);
-                        studentInfo.saveInBackground();
+                        studentInfo.saveInBackground();*/
                     }
                 }
         );
