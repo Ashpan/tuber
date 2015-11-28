@@ -19,13 +19,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Name"
         android:ems="10"
         android:id="@+id/editTextName"
         android:layout_row="1"
         android:layout_column="0"
         android:layout_columnSpan="1"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:hint="Name" />
 
     <Space
         android:layout_width="match_parent"
@@ -36,7 +36,6 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Rate ($/hour)"
         android:ems="10"
         android:id="@+id/editTextRate"
         android:layout_row="4"
@@ -106,5 +105,14 @@
         android:layout_column="0"
         android:layout_gravity="center_horizontal">
     </Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/textView"
+        android:layout_row="12"
+        android:layout_column="0" />
 
 </GridLayout>

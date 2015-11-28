@@ -6,6 +6,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class Tutors extends AppCompatActivity {
 
@@ -22,12 +23,13 @@ public class Tutors extends AppCompatActivity {
         tutorSubmit.setOnClickListener(
                 new Button.OnClickListener() {
                     public void onClick(View v){
+                        TextView textView = (TextView)findViewById(R.id.textView);
                         EditText editTextName = (EditText)findViewById(R.id.editTextName);
                         EditText editTextRate = (EditText)findViewById(R.id.editTextRate);
                         Button tutorSubmit = (Button)findViewById(R.id.tutorSubmit);
                         String name = editTextName.toString();
 
-                        tutorSubmit.setText(name);
+                        textView.setText(name);
 
                         //ParseObject tutorInfo = new ParseObject("TutorInfo");
                         //gameScore.put("name", name);
