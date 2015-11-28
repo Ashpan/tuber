@@ -10,10 +10,20 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.parse.Parse;
+import com.parse.ParseException;
+import com.parse.ParseGeoPoint;
+import com.parse.ParseObject;
+
 public class Tutors extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // Enable Local Datastore.
+        Parse.enableLocalDatastore(this);
+
+        Parse.initialize(this, "LTMmNYruiHWZXuxU0zz2RJKrPEPTj7JlhjvyD4K6", "zajyFctNhiIgZjHSkl6fnmoXM8PIRlkdl18ujUpL");
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tutors);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -39,13 +49,27 @@ public class Tutors extends AppCompatActivity {
                             name.append("aaa");
                         }
 
-                        //ParseObject tutorInfo = new ParseObject("TutorInfo");
+                        ParseObject tutorInfo = new ParseObject("TutorInfo");
                         //gameScore.put("name", name);
                         //gameScore.put("rate", rate);
                         //gameScore.put("cheatMode", false);
                         //gameScore.saveInBackground();
+
+                        ParseGeoPoint point = new ParseGeoPoint(30.0, -20.0);
+                        ParseObject object = new ParseObject("PlaceObject");
+                        object.put("location", point);
+                        try {
+                            object.save();
+                        } catch (ParseException e) {
+                            e.printStackTrace();
+                        }
+
+
                     }
                 }
         );
     }
+
+
+
 }
