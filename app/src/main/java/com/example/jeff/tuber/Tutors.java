@@ -24,6 +24,8 @@ public class Tutors extends AppCompatActivity {
                     public void onClick(View v){
                         TextView editText = (TextView)findViewById(R.id.editText);
                         String name = editText.toString();
+
+                        System.out.println(name);
                     }
                 }
         );
