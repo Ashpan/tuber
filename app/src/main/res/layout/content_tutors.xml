@@ -12,4 +12,76 @@
     tools:context="com.example.jeff.tuber.Tutors"
     tools:showIn="@layout/activity_tutors">
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter Name"
+        android:ems="10"
+        android:id="@+id/tutorName"
+        android:layout_marginTop="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/tutorRate"
+        android:autoText="false"
+        android:capitalize="words"
+        android:clickable="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/tutorRate"
+        android:hint="Rate per Hour"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/tutorName"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Math"
+        android:id="@+id/tutorMath"
+        android:checked="false"
+        android:layout_above="@+id/tutorEng"
+        android:layout_alignStart="@+id/tutorEng"
+        android:layout_marginBottom="29dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Science"
+        android:id="@+id/tutorScience"
+        android:checked="false"
+        android:layout_alignTop="@+id/tutorMath"
+        android:layout_toEndOf="@+id/tutorEng"
+        android:layout_marginStart="27dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="English"
+        android:id="@+id/tutorEng"
+        android:checked="false"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/tutorRate" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Programming"
+        android:id="@+id/tutorProgramming"
+        android:checked="false"
+        android:layout_below="@+id/tutorMath"
+        android:layout_alignStart="@+id/tutorScience" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/tutorSubmit"
+        android:layout_marginTop="62dp"
+        android:layout_below="@+id/tutorEng"
+        android:layout_toEndOf="@+id/tutorMath" />
+
 </RelativeLayout>
