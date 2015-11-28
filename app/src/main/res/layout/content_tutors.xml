@@ -2,6 +2,7 @@
 <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -19,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Tutor"
+        android:text="Tutor Info"
         android:id="@+id/tutorTitle"
         android:layout_row="0"
         android:layout_column="0"
@@ -37,7 +38,10 @@
         android:layout_column="0"
         android:layout_columnSpan="1"
         android:textSize="30sp"
-        android:hint="Name" />
+        android:hint="Name"
+        android:background="#96ffffff"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000" />
 
     <Space
         android:layout_width="match_parent"
@@ -50,63 +54,63 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:id="@+id/editTextRate"
-        android:layout_row="4"
+        android:layout_row="3"
         android:inputType="number"
         android:hint="Rate ($/hour)"
         android:textSize="30sp"
-        android:layout_column="0" />
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_row="5"
-        android:layout_column="0" />
+        android:layout_column="0"
+        android:background="#96ffffff"
+        android:backgroundTint="#ffffff"
+        android:textColor="#000000" />
 
     <CheckBox
-        android:layout_width="wrap_content"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:text="Math"
         android:id="@+id/checkMath"
         android:layout_row="6"
         android:checked="false"
         android:textSize="20sp"
-        android:layout_column="0" />
+        android:layout_column="0"
+        android:background="#96ffffff"
+        android:layout_gravity="top"
+        android:layout_marginTop="20dp" />
 
     <CheckBox
-        android:layout_width="wrap_content"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:text="Science"
         android:id="@+id/checkScience"
         android:layout_row="7"
         android:checked="false"
         android:textSize="20sp"
-        android:layout_column="0" />
+        android:layout_column="0"
+        android:background="#96ffffff"
+        android:layout_gravity="top" />
 
     <CheckBox
-        android:layout_width="wrap_content"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:text="English"
         android:id="@+id/checkEnglish"
         android:layout_row="8"
         android:checked="false"
         android:textSize="20sp"
-        android:layout_column="0" />
+        android:layout_column="0"
+        android:background="#96ffffff"
+        android:layout_gravity="top" />
 
     <CheckBox
-        android:layout_width="wrap_content"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:text="Programming"
         android:id="@+id/checkProgramming"
         android:layout_row="9"
         android:checked="false"
         android:textSize="20sp"
-        android:layout_column="0" />
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_row="10"
-        android:layout_column="0" />
+        android:layout_column="0"
+        android:background="#96ffffff"
+        android:layout_gravity="top" />
 
     <Button
         android:layout_width="250dp"
@@ -115,7 +119,7 @@
         android:id="@+id/tutorSubmit"
         android:layout_row="11"
         android:layout_column="0"
-        android:layout_gravity="center_horizontal">
+        android:layout_gravity="center">
     </Button>
 
 </GridLayout>
