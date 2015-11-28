@@ -22,7 +22,7 @@ public class Tutors extends AppCompatActivity {
         tutorSubmit.setOnClickListener(
                 new Button.OnClickListener() {
                     public void onClick(View v){
-                        TextView editText = (TextView)findViewById(R.id.editText);
+                        EditText editText = (EditText)findViewById(R.id.editText);
                         String name = editText.toString();
                         tutorSubmit.setText(name);
                     }
