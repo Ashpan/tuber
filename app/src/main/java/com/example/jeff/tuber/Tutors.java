@@ -17,15 +17,14 @@ public class Tutors extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        Button tutorSubmit = (Button)findViewById(R.id.tutorSubmit);
+        final Button tutorSubmit = (Button)findViewById(R.id.tutorSubmit);
 
         tutorSubmit.setOnClickListener(
                 new Button.OnClickListener() {
                     public void onClick(View v){
                         TextView editText = (TextView)findViewById(R.id.editText);
                         String name = editText.toString();
-
-                        System.out.println(name);
+                        tutorSubmit.setText(name);
                     }
                 }
         );
