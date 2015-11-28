@@ -25,7 +25,11 @@
         <activity
             android:name=".Tutors"
             android:label="@string/title_activity_tutors"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TutorProfile"
+            android:label="@string/title_activity_tutor_profile"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
