@@ -1,19 +1,21 @@
 package com.example.jeff.tuber;
 
+import android.location.Criteria;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.text.Editable;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.TextView;
 
+import com.parse.LocationCallback;
 import com.parse.Parse;
 import com.parse.ParseException;
 import com.parse.ParseGeoPoint;
 import com.parse.ParseObject;
+import com.parse.SaveCallback;
 
 public class Tutors extends AppCompatActivity {
 
@@ -34,35 +36,45 @@ public class Tutors extends AppCompatActivity {
         tutorSubmit.setOnClickListener(
                 new Button.OnClickListener() {
                     public void onClick(View v){
-                        EditText editTextName = (EditText)findViewById(R.id.editTextName);
-                        EditText editTextRate = (EditText)findViewById(R.id.editTextRate);
+                        final EditText editTextName = (EditText)findViewById(R.id.editTextName);
+                        final EditText editTextRate = (EditText)findViewById(R.id.editTextRate);
 
-                        Editable name = editTextName.getText();
-                        Editable rate = editTextRate.getText();
+//                        Editable name = editTextName.getText();
+//                        Editable rate = editTextRate.getText();
 
                         CheckBox checkMath = (CheckBox)findViewById(R.id.checkMath);
                         CheckBox checkScience = (CheckBox)findViewById(R.id.checkScience);
                         CheckBox checkEnglish = (CheckBox)findViewById(R.id.checkEnglish);
                         CheckBox checkProgramming = (CheckBox)findViewById(R.id.checkProgramming);
 
-                        if(checkMath.equals(true)) {
-                            name.append("aaa");
-                        }
+                        ParseGeoPoint.getCurrentLocationInBackground(20000, new LocationCallback() {
+                            @Override
+                            public void done(ParseGeoPoint geoPoint, ParseException e) {
+                                Criteria criteria = new Criteria();
+                                criteria.setAccuracy(Criteria.ACCURACY_LOW);
+                                criteria.setAltitudeRequired(false);
+                                criteria.setBearingRequired(false);
+                                criteria.setCostAllowed(true);
+                                criteria.setPowerRequirement(Criteria.POWER_LOW);
+                                if (e == null) {
 
-                        ParseObject tutorInfo = new ParseObject("TutorInfo");
-                        //gameScore.put("name", name);
-                        //gameScore.put("rate", rate);
-                        //gameScore.put("cheatMode", false);
-                        //gameScore.saveInBackground();
-
-                        ParseGeoPoint point = new ParseGeoPoint(30.0, -20.0);
-                        ParseObject object = new ParseObject("PlaceObject");
-                        object.put("location", point);
-                        try {
-                            object.save();
-                        } catch (ParseException e) {
-                            e.printStackTrace();
-                        }
+                                    ParseObject tutorInfo = new ParseObject("TutorInfo");
+                                    tutorInfo.put("name", editTextName.getText().toString());
+                                    tutorInfo.put("rate", Double.parseDouble(editTextRate.getText().toString()));
+                                    tutorInfo.put("geoPoint", geoPoint);
+                                    tutorInfo.put("cheatMode", false);
+                                    tutorInfo.saveInBackground(new SaveCallback() {
+                                        @Override
+                                        public void done(ParseException e) {
+                                            //this means it finished saving
+                                            Log.d("", "done");
+                                        }
+                                    });
+                                } else {
+                                    System.out.println("Error" + e.toString());
+                                }
+                            }
+                        });
 
 
                     }
