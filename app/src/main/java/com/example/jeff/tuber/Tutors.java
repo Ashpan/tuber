@@ -19,18 +19,20 @@ public class Tutors extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         final Button tutorSubmit = (Button)findViewById(R.id.tutorSubmit);
-        EditText editTextName = (EditText)findViewById(R.id.editTextName);
 
         tutorSubmit.setOnClickListener(
                 new Button.OnClickListener() {
                     public void onClick(View v){
                         TextView textView = (TextView)findViewById(R.id.textView);
+                        TextView textView3 = (TextView)findViewById(R.id.textView3);
                         EditText editTextName = (EditText)findViewById(R.id.editTextName);
                         EditText editTextRate = (EditText)findViewById(R.id.editTextRate);
-                        Button tutorSubmit = (Button)findViewById(R.id.tutorSubmit);
+
                         Editable name = editTextName.getText();
+                        Editable rate = editTextRate.getText();
 
                         textView.setText(name);
+                        textView3.setText(rate);
 
                         //ParseObject tutorInfo = new ParseObject("TutorInfo");
                         //gameScore.put("name", name);
