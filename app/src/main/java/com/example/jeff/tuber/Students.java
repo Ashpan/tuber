@@ -21,10 +21,12 @@ public class Students extends AppCompatActivity {
         studentSubmit.setOnClickListener(
                 new Button.OnClickListener() {
                     public void onClick(View v) {
+                        //assign variables to EditText fields
                         EditText textLow = (EditText) findViewById(R.id.textLow);
                         EditText textHigh = (EditText) findViewById(R.id.textHigh);
                         EditText searchRadius = (EditText) findViewById(R.id.searchRadius);
 
+                        //assigns data input to variables
                         Editable low = textLow.getText();
                         Editable high = textHigh.getText();
                         Editable radius = searchRadius.getText();

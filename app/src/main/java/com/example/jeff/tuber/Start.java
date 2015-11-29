@@ -10,11 +10,13 @@ import android.view.View;
 
 public class Start extends AppCompatActivity {
 
+    //button to launch student framework
     public void launchStudent(View view) {
         Intent startStudents = new Intent(this, Students.class);
         startActivity(startStudents);
     }
 
+    //button to launch tutor framework
     public void launchTutor(View view) {
         Intent startTutors = new Intent(this, Tutors.class);
         startActivity(startTutors);
