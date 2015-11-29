@@ -87,4 +87,14 @@
         android:paddingRight="5dp"
         android:layout_marginBottom="10dp" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tutor Results Temp"
+        android:id="@+id/button"
+        android:layout_below="@+id/textTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:onClick="launchTutorResults" />
+
 </RelativeLayout>

@@ -58,7 +58,7 @@
         android:id="@+id/editTextRate"
         android:layout_row="3"
         android:inputType="number"
-        android:hint="Rate ($/hour)"
+        android:hint="Rate in $/hour"
         android:textSize="30sp"
         android:layout_column="0"
         android:background="#96ffffff"
