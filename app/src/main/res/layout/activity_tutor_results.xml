@@ -43,7 +43,7 @@
             android:layout_columnSpan="3" />
 
         <TextView
-            android:layout_width="150dp"
+            android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Filters:"
@@ -79,7 +79,7 @@
             android:layout_column="0">
 
             <RadioButton
-                android:layout_width="150dp"
+                android:layout_width="160dp"
                 android:layout_height="wrap_content"
                 android:text="Lowest Price"
                 android:id="@+id/radioButton"
@@ -94,10 +94,11 @@
                 android:background="#96ffffff"
                 android:textStyle="bold"
                 android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:textSize="17sp" />
 
             <RadioButton
-                android:layout_width="150dp"
+                android:layout_width="160dp"
                 android:layout_height="wrap_content"
                 android:text="Highest Price"
                 android:id="@+id/radioButton2"
@@ -112,10 +113,11 @@
                 android:background="#96ffffff"
                 android:textStyle="bold"
                 android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:textSize="17sp" />
 
             <RadioButton
-                android:layout_width="150dp"
+                android:layout_width="160dp"
                 android:layout_height="wrap_content"
                 android:text="Closest Tutors"
                 android:id="@+id/radioButton3"
@@ -130,7 +132,8 @@
                 android:background="#96ffffff"
                 android:textStyle="bold"
                 android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginBottom="5dp"
+                android:textSize="17sp" />
         </RadioGroup><![CDATA[
 
 
