@@ -16,9 +16,9 @@ public class Students extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        final Button tutorSubmit = (Button)findViewById(R.id.tutorSubmit);
+        final Button studentSubmit = (Button)findViewById(R.id.studentSubmit);
 
-        tutorSubmit.setOnClickListener(
+        studentSubmit.setOnClickListener(
                 new Button.OnClickListener() {
                     public void onClick(View v) {
                         EditText textLow = (EditText) findViewById(R.id.textLow);
