@@ -4,14 +4,11 @@ import android.location.Criteria;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.text.Editable;
-import android.text.SpannableStringBuilder;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
-
 import com.parse.LocationCallback;
 import com.parse.Parse;
 import com.parse.ParseException;
@@ -41,11 +38,8 @@ public class Tutors extends AppCompatActivity {
                         final EditText editTextName = (EditText)findViewById(R.id.editTextName);
                         final EditText editTextRate = (EditText)findViewById(R.id.editTextRate);
 
-                        Editable name = editTextName.getText();
-                        Editable rate = editTextRate.getText();
-
-                        String nameStr = name.toString();
-                        int rateInt = Integer.parseInt(rate.toString());
+//                        Editable name = editTextName.getText();
+//                        Editable rate = editTextRate.getText();
 
                         CheckBox checkMath = (CheckBox)findViewById(R.id.checkMath);
                         CheckBox checkScience = (CheckBox)findViewById(R.id.checkScience);
@@ -80,8 +74,13 @@ public class Tutors extends AppCompatActivity {
                                 }
                             }
                         });
+
+
                     }
                 }
         );
     }
+
+
+
 }

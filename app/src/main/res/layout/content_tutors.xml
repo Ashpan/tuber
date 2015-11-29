@@ -43,8 +43,7 @@
         android:background="#96ffffff"
         android:layout_marginTop="10dp"
         android:textColor="#000000"
-        android:textStyle="bold"
-        android:radius="20dp" />
+        android:textStyle="bold" />
 
     <Space
         android:layout_width="match_parent"

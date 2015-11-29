@@ -33,7 +33,6 @@
         android:layout_height="wrap_content"
         android:text="Student"
         android:onClick="launchStudent"
-        android:onHover="#2e1271"
         android:id="@+id/buttonStudent"
         android:textColor="#000000"
         android:textStyle="bold"
