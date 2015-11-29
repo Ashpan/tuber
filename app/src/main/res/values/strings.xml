@@ -4,6 +4,7 @@
     <string name="title_activity_students">Students</string>
     <string name="title_activity_tutors">Tutors</string>
     <string name="title_activity_tutor_profile">TutorProfile</string>
+    <string name="title_activity_tutor_results">TutorResults</string>
 
 
 </resources>
