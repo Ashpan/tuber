@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.jeff.tuber">
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="com.javapapers.currentlocationinmap.permission.MAPS_RECEIVE" />
 
     <application
@@ -31,10 +32,16 @@
             android:name=".Tutors"
             android:label="@string/title_activity_tutors"
             android:theme="@style/AppTheme.NoActionBar" />
-        <!--<activity
+        <!--
+            <activity
             android:name=".TutorProfile"
             android:label="@string/title_activity_tutor_profile"
-            android:theme="@style/AppTheme.NoActionBar"></activity>-->
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        -->
+        <activity
+            android:name=".TutorResults"
+            android:label="@string/title_activity_tutor_results"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
