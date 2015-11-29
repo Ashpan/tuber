@@ -40,7 +40,8 @@
         android:layout_toStartOf="@+id/textOr"
         android:layout_marginLeft="35dp"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="-10dp" />
+        android:layout_marginBottom="-10dp"
+        android:background="#c8ffffff" />
 
     <Button
         android:layout_width="90dp"
@@ -54,7 +55,8 @@
         android:layout_toEndOf="@+id/textOr"
         android:layout_marginTop="70dp"
         android:layout_marginRight="35dp"
-        android:layout_marginLeft="20dp" />
+        android:layout_marginLeft="20dp"
+        android:background="#c8ffffff" />
 
     <TextView
         android:layout_width="wrap_content"
