@@ -23,7 +23,6 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Tutor Results"
             android:id="@+id/textTutor"
-            android:background="#96ffffff"
             android:layout_row="0"
             android:layout_column="0"
             android:layout_gravity="center_horizontal"
@@ -32,108 +31,119 @@
             android:paddingLeft="5dp"
             android:paddingRight="5dp"
             android:textColor="#000000"
-            android:textStyle="bold"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold" />
 
         <Space
-            android:layout_width="20px"
-            android:layout_height="20px"
+            android:layout_width="50dp"
+            android:layout_height="10dp"
             android:layout_row="1"
-            android:layout_column="0" />
+            android:layout_column="0"
+            android:layout_columnSpan="3" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Filters"
+            android:text="Filters:"
             android:id="@+id/textFilters"
             android:layout_row="2"
             android:layout_column="0"
             android:paddingLeft="5dp"
             android:paddingRight="5dp"
             android:textColor="#000000"
+            android:background="#96ffffff"
             android:textStyle="bold"
-            android:background="#96ffffff" />
-
-        <Space
-            android:layout_width="20px"
-            android:layout_height="20px"
-            android:layout_row="5"
-            android:layout_column="0" />
+            android:textSize="30sp"
+            android:layout_marginBottom="5dp" />
 
         <ListView
-            android:layout_width="145dp"
+            android:layout_width="150dp"
             android:layout_height="400dp"
             android:id="@+id/listView"
-            android:layout_row="4"
+            android:layout_row="2"
             android:layout_column="2"
             android:layout_gravity="right"
-            android:layout_rowSpan="10"
+            android:layout_rowSpan="2"
             android:paddingLeft="5dp"
             android:paddingRight="5dp"
             android:textColor="#000000"
             android:textStyle="bold"
             android:background="#96ffffff" />
 
-        <Space
-            android:layout_width="20px"
-            android:layout_height="20px"
+        <RadioGroup
+            android:layout_width="168dp"
+            android:layout_height="wrap_content"
             android:layout_row="3"
-            android:layout_column="0" />
+            android:layout_column="0">
 
-        <RadioButton
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:text="Lowest Price"
-            android:id="@+id/radLowest"
-            android:layout_row="4"
-            android:layout_column="0"
-            android:checked="false"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp"
-            android:textColor="#000000"
-            android:textStyle="bold"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:background="#96ffffff" /> />
+            <RadioButton
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Lowest Price"
+                android:id="@+id/radioButton"
+                android:layout_row="4"
+                android:layout_column="0"
+                android:checked="false"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="#000000"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="#96ffffff"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
 
-        <RadioButton
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:text="Highest Price"
-            android:id="@+id/radHighest"
-            android:layout_row="6"
-            android:layout_column="0"
-            android:checked="false"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp"
-            android:textColor="#000000"
-            android:textStyle="bold"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:background="#96ffffff" />
+            <RadioButton
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Highest Price"
+                android:id="@+id/radioButton2"
+                android:layout_row="6"
+                android:layout_column="0"
+                android:checked="false"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="#000000"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="#96ffffff"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
 
-        <RadioButton
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:text="Closest Tutors"
-            android:id="@+id/radClosest"
-            android:layout_row="8"
-            android:layout_column="0"
-            android:checked="false"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp"
-            android:textColor="#000000"
-            android:textStyle="bold"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:background="#96ffffff" />
+            <RadioButton
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Closest Tutors"
+                android:id="@+id/radioButton3"
+                android:layout_row="8"
+                android:layout_column="0"
+                android:checked="false"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="#000000"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="#96ffffff"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
+        </RadioGroup><![CDATA[
 
-        <Space
-            android:layout_width="20px"
-            android:layout_height="20px"
-            android:layout_row="7"
-            android:layout_column="0" />
+
+
+        />
+
+
+
+
+
+
+
+
+    ]]>
     </GridLayout>
 </RelativeLayout>
