@@ -19,7 +19,6 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Tutor Info"
         android:id="@+id/tutorTitle"
         android:layout_row="0"
@@ -27,7 +26,8 @@
         android:textSize="50sp"
         android:textAlignment="center"
         android:layout_gravity="center_horizontal"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textColor="#000000" />
 
     <EditText
         android:layout_width="match_parent"
